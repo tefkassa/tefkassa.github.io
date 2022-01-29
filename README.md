@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## teferi (tef) kassa 
+Teferi is currently working at CIBC (Digital, Cards and Contact Centre Technology) as a Senior Manager, Cloud Integration Lead. 
 
-You can use the [editor on GitHub](https://github.com/tefkassa/tefkassa.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Teferi has also worked at different Accenture clients as Test Architect, Business Systems Analyst and Solution Analyst. Teferi has experience working in different sectors like Banking, Textile, Fashion, Telecom and Agro-Chemical industries. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Teferi changed his career from Textile Industry to Tech because he was inspired by the tech industry and it's impact and he wanted to be a part of it. To achieve his goal he attended a Web programming training provided by NPower Canada.
 
-### Markdown
+__________
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+🎙Teferi is a Host of 𝗛𝗮𝗯𝗲𝘀𝗵𝗮 𝗶𝗻 𝗧𝗲𝗰𝗵 club on 𝗖𝗟𝗨𝗕𝗛𝗢𝗨𝗦𝗘 where he talk to #Ethiopian & #Eritrean #Tech professionals. Please 𝗟𝗶𝘀𝘁𝗲𝗻 𝘁𝗼 the podcast on habeshaintech.com or wherever you get your podcast. 
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tefkassa/tefkassa.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Connect with Teferi on LinkedIn, Clubhouse (@tefkassa) or DM for any other ways to chat and collaborate.
