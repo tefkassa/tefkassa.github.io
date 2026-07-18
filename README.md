@@ -1,12 +1,64 @@
-## teferi (tef) kassa 
-Teferi is currently working at CIBC (Digital, Cards and Contact Centre Technology) as a Senior Manager, Cloud Integration Lead. 
+# Hi, I'm Tef 👋
 
-Teferi has also worked at different Accenture clients as Test Architect, Business Systems Analyst and Solution Analyst. Teferi has experience working in different sectors like Banking, Textile, Fashion, Telecom and Agro-Chemical industries. 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tefkassa)
+[![Podcast](https://img.shields.io/badge/Habesha_in_Tech-Podcast-blueviolet?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/show/habeshaInTech)
+[![Apple Podcasts](https://img.shields.io/badge/Apple_Podcasts-9933CC?style=for-the-badge&logo=apple-podcasts&logoColor=white)](https://podcasts.apple.com/podcast/habesha-in-tech)
 
-Teferi changed his career from Textile Industry to Tech because he was inspired by the tech industry and it's impact and he wanted to be a part of it. To achieve his goal he attended a Web programming training provided by NPower Canada.
+---
 
-__________
+## 🙋‍♂️ About Me
 
-🎙Teferi is a Host of 𝗛𝗮𝗯𝗲𝘀𝗵𝗮 𝗶𝗻 𝗧𝗲𝗰𝗵 club on 𝗖𝗟𝗨𝗕𝗛𝗢𝗨𝗦𝗘 where he talk to #Ethiopian & #Eritrean #Tech professionals. Please 𝗟𝗶𝘀𝘁𝗲𝗻 𝘁𝗼 the podcast on habeshaintech.com or wherever you get your podcast. 
+With over **11 years of experience** in technology and business systems, I serve as **Senior Manager, Business Systems Analysis at CIBC**. I bridge the gap between business strategy and technology delivery — with a strong focus on cloud and on-premises contact center platforms, requirements engineering, and artificial intelligence.
 
-Connect with Teferi on LinkedIn, Clubhouse (@tefkassa) or DM for any other ways to chat and collaborate.
+---
+
+## 💼 What I Do
+
+- Lead business systems analysis for **cloud and on-premises contact center** platforms
+- Drive **requirements engineering** initiatives that align business goals with technology strategies
+- Apply **AI/ML insights** to optimize enterprise solutions
+- Collaborate cross-functionally with product, engineering, and operations teams
+
+---
+
+## 🛠️ Skills & Technologies
+
+**Contact Center Platforms**
+`Genesys` `Amazon Connect` `Cisco` `Twilio`
+
+**Cloud & Infrastructure**
+`AWS` `Azure` `Google Cloud`
+
+**Business Analysis & Methodology**
+`BABOK` `Agile / Scrum` `JIRA` `Confluence` `Salesforce`
+
+**AI & Data**
+`AI/ML Integration` `Data Analysis` `Business Intelligence`
+
+---
+
+## 🎙️ Habesha in Tech Podcast
+
+I am the **founder and host** of the [**Habesha in Tech**](https://open.spotify.com/show/habeshaInTech) podcast — a platform dedicated to empowering **Ethiopian and Eritrean professionals** transitioning into the tech industry.
+
+Through collaborative discussions in **Amharic and English**, the podcast fosters community, representation, and accessibility within the tech space.
+
+🎧 **Listen on:** [Spotify](https://open.spotify.com/show/habeshaInTech) | [Apple Podcasts](https://podcasts.apple.com/podcast/habesha-in-tech)
+
+---
+
+## 📊 GitHub Stats
+
+![Teferi's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tefkassa&show_icons=true&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tefkassa&layout=compact&theme=tokyonight&hide_border=true)
+
+---
+
+## 🤝 Connect With Me
+
+I'm always open to connecting with fellow tech professionals, podcast guests, and collaborators. Feel free to reach out!
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/tefkassa)
+- 🎙️ [Habesha in Tech Podcast](https://open.spotify.com/show/habeshaInTech)
+
+> *"Technology is most powerful when it's accessible to everyone."*
