@@ -95,6 +95,13 @@
     border-radius: 14px; padding: 18px; margin-bottom: 18px; overflow-x: auto;
   }
   .activity img { display: block; width: 100%; min-width: 560px; height: auto; }
+  .stats-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
+  .stat {
+    flex: 1; min-width: 140px; background: var(--card);
+    border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px;
+  }
+  .stat strong { display: block; font-size: 1.8rem; color: var(--gold); }
+  .stat span { color: var(--muted); font-size: .95rem; }
   .connect p { color: var(--muted); margin-bottom: 20px; max-width: 600px; }
   footer {
     border-top: 1px solid var(--line); padding: 26px 0 40px;
@@ -219,11 +226,19 @@
 
   <section id="stats">
     <h2><span class="n">05</span>GitHub</h2>
-    <p class="sub">See what I&rsquo;m building on GitHub.</p>
+    <div class="stats-row">
+      <div class="stat"><strong>3,356</strong><span>contributions in the last year</span></div>
+      <div class="stat"><strong>77%</strong><span>commits</span></div>
+      <div class="stat"><strong>23%</strong><span>pull requests</span></div>
+    </div>
     <div class="activity">
       <img src="https://ghchart.rshah.org/d4af37/tefkassa" alt="Teferi's GitHub contribution activity">
     </div>
-    <div class="cta" style="margin-top:0">
+    <div class="card">
+      <h3>Activity overview</h3>
+      <p>Contributed to <a href="https://github.com/torcreatives/withhabeshaapp">torcreatives/withhabeshaapp</a>, <a href="https://github.com/torcreatives/torstudio-new">torcreatives/torstudio-new</a>, <a href="https://github.com/torcreatives/torcreatives">torcreatives/torcreatives</a> and 44 other repositories.</p>
+    </div>
+    <div class="cta" style="margin-top:18px">
       <a class="btn btn-primary" href="https://github.com/tefkassa">View GitHub Profile</a>
     </div>
   </section>
