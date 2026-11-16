@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tef Kassa — Business Systems, Contact Centers &amp; AI</title>
-<meta name="description" content="Teferi Kassa — Senior Manager, Business Systems Analysis at CIBC. 11+ years bridging business strategy and technology delivery, and founder and host of the Habesha in Tech podcast.">
+<title>Tef Kassa — Business Systems Analysis &amp; Digital Product Delivery</title>
+<meta name="description" content="Tef Kassa — Senior Manager, Business Systems Analysis at CIBC. 11+ years driving enterprise-scale digital, MarTech, and AI transformations across cloud and on-premises platforms.">
 <style>
   :root {
     --bg: #0a0a0a;
@@ -42,15 +42,20 @@
     text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
   }
   .hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1.08; letter-spacing: -0.02em; }
-  .hero h1 .wave { display: inline-block; }
   .hero .role {
     margin-top: 18px; font-size: 1.25rem; color: var(--text); font-weight: 600;
   }
   .hero .role em { font-style: normal; color: var(--accent); }
-  .hero p.lede { margin-top: 14px; font-size: 1.08rem; color: var(--muted); max-width: 640px; }
+  .hero p.lede { margin-top: 14px; font-size: 1.08rem; color: var(--muted); max-width: 660px; }
+  .award {
+    display: inline-flex; align-items: center; gap: 10px; margin-top: 22px;
+    border: 1px solid var(--gold); background: var(--accent-soft);
+    border-radius: 999px; padding: 9px 18px; font-weight: 700; font-size: .95rem; color: var(--gold);
+  }
   .cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
   .btn {
-    display: inline-block; padding: 12px 22px; border-radius: 999px;
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 12px 22px; border-radius: 999px;
     font-weight: 700; font-size: .98rem; text-decoration: none;
   }
   .btn-primary { background: var(--accent); color: #0a0a0a; }
@@ -66,13 +71,21 @@
   section h2 { font-size: 1.5rem; letter-spacing: -0.01em; margin-bottom: 6px; }
   section h2 .n { color: var(--accent); margin-right: 8px; }
   section .sub { color: var(--muted); margin-bottom: 20px; }
+  .icon {
+    width: 22px; height: 22px; stroke: var(--gold); fill: none;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none;
+  }
+  .icon-sm { width: 18px; height: 18px; }
   .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .card {
     background: var(--card); border: 1px solid var(--line);
     border-radius: 14px; padding: 20px 22px;
   }
-  .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card h3 { font-size: 1.05rem; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
   .card p { color: var(--muted); font-size: .97rem; }
+  .card ul { color: var(--muted); font-size: .97rem; padding-left: 18px; }
+  .card ul li { margin-bottom: 6px; }
+  .card ul li::marker { color: var(--gold); }
   .skill-group { margin-bottom: 18px; }
   .skill-group h3 { font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -80,6 +93,35 @@
     background: var(--accent-soft); border: 1px solid var(--line);
     padding: 6px 13px; border-radius: 999px; font-size: .92rem; font-weight: 600;
   }
+  .timeline { margin-left: 7px; padding-left: 28px; border-left: 2px solid var(--line); }
+  .tl-item { position: relative; padding-bottom: 30px; }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-item::before {
+    content: ""; position: absolute; left: -36px; top: 6px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--gold); border: 2px solid var(--bg);
+  }
+  .tl-item h3 { font-size: 1.12rem; }
+  .tl-meta { color: var(--gold); font-weight: 700; font-size: .95rem; margin: 2px 0 10px; }
+  .tl-item ul { color: var(--muted); font-size: .97rem; padding-left: 18px; }
+  .tl-item ul li { margin-bottom: 6px; }
+  .tl-item ul li::marker { color: var(--gold); }
+  .edu-item {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 22px; margin-bottom: 12px;
+  }
+  .edu-item h3 { font-size: 1.05rem; }
+  .edu-item .meta { color: var(--gold); font-weight: 700; font-size: .92rem; }
+  .edu-item p { color: var(--muted); font-size: .95rem; }
+  .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .cert {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 12px; padding: 14px 18px;
+    display: flex; gap: 12px; align-items: flex-start;
+  }
+  .cert strong { display: block; font-size: .98rem; }
+  .cert span { color: var(--muted); font-size: .88rem; }
   .podcast {
     background: linear-gradient(135deg, #221a08, #141414);
     border: 1px solid var(--line); border-radius: 16px; padding: 28px;
@@ -88,13 +130,6 @@
   .podcast .tag { color: var(--gold); font-weight: 700; font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; }
   .podcast p { color: var(--muted); margin: 12px 0 20px; max-width: 600px; }
   .podcast .langs { color: var(--text); font-weight: 600; }
-  .stats { display: flex; flex-wrap: wrap; gap: 14px; }
-  .stats img { max-width: 100%; border-radius: 12px; }
-  .activity {
-    background: var(--card); border: 1px solid var(--line);
-    border-radius: 14px; padding: 18px; margin-bottom: 18px; overflow-x: auto;
-  }
-  .activity img { display: block; width: 100%; min-width: 560px; height: auto; }
   .stats-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
   .stat {
     flex: 1; min-width: 140px; background: var(--card);
@@ -102,6 +137,11 @@
   }
   .stat strong { display: block; font-size: 1.8rem; color: var(--gold); }
   .stat span { color: var(--muted); font-size: .95rem; }
+  .activity {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px; margin-bottom: 18px; overflow-x: auto;
+  }
+  .activity img { display: block; width: 100%; min-width: 560px; height: auto; }
   .connect p { color: var(--muted); margin-bottom: 20px; max-width: 600px; }
   footer {
     border-top: 1px solid var(--line); padding: 26px 0 40px;
@@ -111,7 +151,7 @@
   footer a { color: var(--muted); text-decoration: none; }
   footer a:hover { color: var(--text); }
   @media (max-width: 640px) {
-    .cards { grid-template-columns: 1fr; }
+    .cards, .cert-grid { grid-template-columns: 1fr; }
     nav a { margin-left: 14px; }
     .hero { padding-top: 40px; }
   }
@@ -124,20 +164,34 @@
     <div class="name">Tef<span>.</span></div>
     <nav>
       <a href="#about">About</a>
-      <a href="#work">What I Do</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
       <a href="#podcast">Podcast</a>
       <a href="#connect">Connect</a>
     </nav>
   </header>
 
   <div class="hero">
-    <span class="eyebrow">11+ years in technology &amp; business systems</span>
-    <h1>Hi, I&rsquo;m Tef <span class="wave">&#128075;</span></h1>
+    <span class="eyebrow">Business Systems Analysis &middot; Digital Product Delivery</span>
+    <h1>Tef Kassa</h1>
     <p class="role">Senior Manager, Business Systems Analysis at <em>CIBC</em></p>
-    <p class="lede">I bridge the gap between business strategy and technology delivery, with a strong focus on cloud and on-premises contact center platforms, requirements engineering, and artificial intelligence.</p>
+    <p class="lede">Accomplished Business Systems Analysis and Digital Product Delivery leader with 11+ years of experience driving enterprise-scale digital, MarTech, and AI transformations across cloud and on-premises platforms.</p>
+    <div>
+      <span class="award">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+        2024 Annual Achiever Award &mdash; top 1% of CIBC
+      </span>
+    </div>
     <div class="cta">
-      <a class="btn btn-primary" href="https://www.linkedin.com/in/tefkassa">Connect on LinkedIn</a>
-      <a class="btn btn-ghost" href="https://open.spotify.com/show/habeshaInTech">&#127897; Habesha in Tech</a>
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/tefkassa">
+        <svg class="icon icon-sm" viewBox="0 0 24 24" style="stroke:#0a0a0a"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        Connect on LinkedIn
+      </a>
+      <a class="btn btn-ghost" href="https://open.spotify.com/show/habeshaInTech">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+        Habesha in Tech
+      </a>
     </div>
   </div>
 
@@ -145,74 +199,269 @@
 
   <section id="about">
     <h2><span class="n">01</span>About Me</h2>
-    <p class="sub">With over 11 years of experience in technology and business systems, I serve as Senior Manager, Business Systems Analysis at CIBC. I bridge the gap between business strategy and technology delivery — with a strong focus on cloud and on-premises contact center platforms, requirements engineering, and artificial intelligence.</p>
-  </section>
-
-  <section id="work">
-    <h2><span class="n">02</span>What I Do</h2>
-    <p class="sub">Four things I spend my time on.</p>
+    <p class="sub">I bridge the gap between business strategy and technology delivery. I lead a team of 7&ndash;10 Business Systems Analysts across Salesforce (eCRM), Genesys Engage &amp; Cloud CX, CCaaS, Nuance, Verint, Bold360, Agentic AI / AI Agent, and ECCO Apps — partnering with Product Owners to shape product vision, lead backlog refinement, and drive high-quality delivery across complex, multi-squad initiatives. My roots are in MarTech: nearly five years delivering enterprise Adobe Campaign, cloud migration (GCP), and API modernization programs for one of Canada&rsquo;s largest telecoms.</p>
     <div class="cards">
       <div class="card">
-        <h3>&#128187; Contact Center Platforms</h3>
-        <p>Lead business systems analysis for cloud and on-premises contact center platforms.</p>
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Team Leadership
+        </h3>
+        <p>Lead and mentor a team of 7&ndash;10 Business Systems Analysts, setting delivery standards and building a high-performing, collaborative team.</p>
       </div>
       <div class="card">
-        <h3>&#128203; Requirements Engineering</h3>
-        <p>Drive requirements engineering initiatives that align business goals with technology strategies.</p>
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          Contact Center Platforms
+        </h3>
+        <p>Salesforce (eCRM), Genesys Engage &amp; Cloud CX, CCaaS, Nuance, Verint, Bold360, and ECCO Apps — cloud and on-premises.</p>
       </div>
       <div class="card">
-        <h3>&#129302; AI &amp; ML</h3>
-        <p>Apply AI/ML insights to optimize enterprise solutions.</p>
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z"/></svg>
+          Agentic AI
+        </h3>
+        <p>Build AI Agents on CIBC&rsquo;s AI platform (CAI) and GitHub Copilot to auto-generate BRDs, SRDs, user stories, and traceability matrices.</p>
       </div>
       <div class="card">
-        <h3>&#129309; Cross-Functional Teams</h3>
-        <p>Collaborate cross-functionally with product, engineering, and operations teams.</p>
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg>
+          Delivery Excellence
+        </h3>
+        <p>Backlog refinement, story slicing, testable acceptance criteria, UAT, and release readiness — from business case through deployment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2><span class="n">02</span>Experience</h2>
+    <p class="sub">Eleven years, from test engineering to leading enterprise delivery at CIBC.</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <h3>Senior Manager, Business Systems Analysis</h3>
+        <div class="tl-meta">CIBC, Toronto &middot; November 2024 &ndash; Present</div>
+        <ul>
+          <li>Lead 7&ndash;10 Business Systems Analysts across cloud and on-premises contact center platforms, including Agentic AI, Salesforce eCRM, Genesys Engage &amp; Cloud CX, Bold360, Nuance, CCaaS, and ECCO Apps.</li>
+          <li>Build AI Agents on CIBC&rsquo;s AI platform (CAI) and GitHub Copilot to auto-generate BRDs, SRDs, user stories, and traceability matrices, accelerating delivery timelines.</li>
+          <li>Present requirement approaches, work packages, and delivery plans to executives and senior stakeholders.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Senior Manager, Cloud Integration Lead</h3>
+        <div class="tl-meta">CIBC, Toronto &middot; August 2021 &ndash; October 2024</div>
+        <ul>
+          <li>2024 CIBC Annual Achiever Award recipient — top 1% of the organization for leadership, innovation, and impact.</li>
+          <li>Led delivery of CIBC&rsquo;s Salesforce Modern Desktop (eCRM) initiative and the Bold360-to-Genesys Cloud CX migration.</li>
+          <li>Served as Acting Senior Manager, Business Systems Analysis (March &ndash; October 2024), managing and coaching a team of 8 BSAs.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Senior Solutions Analyst</h3>
+        <div class="tl-meta">Accenture, Toronto &middot; May 2021 &ndash; July 2021</div>
+        <ul>
+          <li>Contributed to Nutrien&rsquo;s enterprise-wide migration to SAP S/4HANA, enhancing transaction processing and reporting.</li>
+          <li>Authored Business Requirements Documents and functional specifications; built interactive BI dashboards.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Senior Business Systems Analyst</h3>
+        <div class="tl-meta">Accenture, Telus account, Toronto &middot; July 2019 &ndash; May 2021</div>
+        <ul>
+          <li>Led Telus&rsquo; Adobe Campaign and Notification Services migration to Google Cloud Platform.</li>
+          <li>Defined requirements for the API modernization program, migrating legacy SOAP APIs to RESTful APIs with OAuth2.</li>
+          <li>Lead BSA for the CRTC-mandated number portability enhancement — Telus&rsquo; first active implementation on GCP.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Business Systems &amp; Quality Analyst</h3>
+        <div class="tl-meta">Accenture, Telus account, Toronto &middot; December 2017 &ndash; June 2019</div>
+        <ul>
+          <li>Hybrid BSA and QA role on the Telus Notification Systems team — billing reminders via email, SMS, and mail using real-time APIs and Control-M batch processing.</li>
+          <li>Built an API automation suite with Katalon Studio for Adobe Campaign Classic components.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Test Engineering Associate</h3>
+        <div class="tl-meta">Accenture, Telus account, Toronto &middot; November 2016 &ndash; November 2017</div>
+        <ul>
+          <li>Led multiple complex QA projects with onshore and offshore teams.</li>
+          <li>Designed a scalable API automation suite for Adobe Campaign Classic using Katalon Studio.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Test Architect Intern</h3>
+        <div class="tl-meta">Accenture, Telus account, Toronto &middot; May 2016 &ndash; October 2016</div>
+        <ul>
+          <li>Supported Accenture&rsquo;s Quality Engineering Transformation Project for Telus.</li>
+          <li>Executed manual and automated testing with SoapUI, REST Client, and Oracle SQL Developer.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Work Management Analyst</h3>
+        <div class="tl-meta">City of Toronto, Toronto &middot; August 2015 &ndash; February 2016</div>
+        <ul>
+          <li>Conducted cost analysis and contract evaluations, identifying savings in City procurement processes.</li>
+          <li>Evaluated RFQs, RFPs, and tenders using SAP, Excel, and Access.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Digital Business and Market Analyst</h3>
+        <div class="tl-meta">GBV Partners, Bologna, Italy &middot; September 2014 &ndash; January 2015</div>
+        <ul>
+          <li>Led competitive benchmarking of social media marketing against luxury e-commerce competitors.</li>
+          <li>Designed surveys with SurveyMonkey and analyzed responses with SPSS.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2><span class="n">03</span>Education</h2>
+    <div class="edu-item">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+      <div>
+        <h3>Certificate of Product Management</h3>
+        <div class="meta">York University, Toronto &middot; January &ndash; July 2023</div>
+      </div>
+    </div>
+    <div class="edu-item">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+      <div>
+        <h3>Leading with Analytics</h3>
+        <div class="meta">Kellogg Executive Education, Northwestern University &middot; November 2020 &ndash; February 2021</div>
+      </div>
+    </div>
+    <div class="edu-item">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+      <div>
+        <h3>Master of Business Administration (MBA)</h3>
+        <div class="meta">Bologna Business School, Bologna, Italy &middot; September 2013 &ndash; June 2014</div>
+      </div>
+    </div>
+    <div class="edu-item">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+      <div>
+        <h3>B.Sc. in Engineering</h3>
+        <div class="meta">Bahir Dar University, Bahir Dar, Ethiopia &middot; October 2006 &ndash; June 2010</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2><span class="n">04</span>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><strong>Certified Scrum Product Owner (CSPO)</strong><span>Scrum Alliance &middot; February 2020</span></div>
+      </div>
+      <div class="cert">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><strong>Certified ScrumMaster (CSM)</strong><span>Scrum Alliance &middot; June 2020</span></div>
+      </div>
+      <div class="cert">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><strong>Certified SAFe 5 Agilist</strong><span>Scaled Agile Inc. &middot; May 2020</span></div>
+      </div>
+      <div class="cert">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><strong>AWS Certified Cloud Practitioner</strong><span>Amazon Web Services &middot; March 2021</span></div>
+      </div>
+      <div class="cert">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><strong>AWS Partner: Technical Accredited</strong><span>Amazon Web Services &middot; February 2021</span></div>
+      </div>
+      <div class="cert">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><strong>Microsoft Certified: Azure Fundamentals</strong><span>Microsoft &middot; February 2021</span></div>
+      </div>
+      <div class="cert">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><strong>ICAgile Certified Professional (ICP)</strong><span>ICAgile &middot; March 2018</span></div>
+      </div>
+      <div class="cert">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><strong>Certificate of Product Management</strong><span>York University &middot; 2023</span></div>
       </div>
     </div>
   </section>
 
   <section id="skills">
-    <h2><span class="n">03</span>Skills &amp; Technologies</h2>
+    <h2><span class="n">05</span>Skills &amp; Technologies</h2>
     <p class="sub">The tools and methods behind the work.</p>
     <div class="skill-group">
-      <h3>Contact Center Platforms</h3>
+      <h3>Business Analysis &amp; Product Delivery</h3>
       <div class="chips">
-        <span class="chip">Genesys</span>
-        <span class="chip">Amazon Connect</span>
-        <span class="chip">Cisco</span>
-        <span class="chip">Twilio</span>
+        <span class="chip">Requirements Elicitation &amp; Documentation</span>
+        <span class="chip">Functional &amp; Non-Functional Requirements</span>
+        <span class="chip">Business Process Modelling</span>
+        <span class="chip">Requirement Traceability</span>
+        <span class="chip">Solution &amp; Gap Analysis</span>
+        <span class="chip">Work Effort Estimation</span>
+        <span class="chip">Backlog Refinement &amp; Story Slicing</span>
+        <span class="chip">Release Planning</span>
+        <span class="chip">UAT</span>
+        <span class="chip">User Story Authoring &amp; Acceptance Criteria</span>
+        <span class="chip">BRDs &amp; FRS</span>
       </div>
     </div>
     <div class="skill-group">
-      <h3>Cloud &amp; Infrastructure</h3>
+      <h3>Platforms</h3>
       <div class="chips">
+        <span class="chip">Salesforce (eCRM / Modern Desktop)</span>
+        <span class="chip">Genesys Cloud CX &amp; Engage</span>
+        <span class="chip">Bold360</span>
+        <span class="chip">CCaaS</span>
+        <span class="chip">Verint</span>
+        <span class="chip">Nuance</span>
+        <span class="chip">IBM Watson</span>
+        <span class="chip">ADA Bot</span>
+        <span class="chip">ECCO Apps</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>Cloud &amp; Integration</h3>
+      <div class="chips">
+        <span class="chip">Google Cloud Platform (GCP)</span>
+        <span class="chip">Microsoft Azure</span>
         <span class="chip">AWS</span>
-        <span class="chip">Azure</span>
-        <span class="chip">Google Cloud</span>
+        <span class="chip">APIs (REST, SOAP) &amp; Microservices</span>
+        <span class="chip">API Modernization (SOAP to REST)</span>
+        <span class="chip">Google CCAI</span>
+        <span class="chip">Azure Cloud Migration</span>
+        <span class="chip">Batch &amp; Real-Time Notification Systems</span>
       </div>
     </div>
     <div class="skill-group">
-      <h3>Business Analysis &amp; Methodology</h3>
+      <h3>AI</h3>
       <div class="chips">
-        <span class="chip">BABOK</span>
-        <span class="chip">Agile / Scrum</span>
-        <span class="chip">JIRA</span>
+        <span class="chip">Agentic AI</span>
+        <span class="chip">AI Agent Development</span>
+        <span class="chip">Generative AI (in progress)</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>Tools &amp; Technologies</h3>
+      <div class="chips">
+        <span class="chip">Control-M</span>
+        <span class="chip">Adobe Campaign (Classic)</span>
+        <span class="chip">SQL Developer</span>
+        <span class="chip">SoapUI</span>
+        <span class="chip">REST Client</span>
+        <span class="chip">HP Quality Center</span>
+        <span class="chip">CaliberRM</span>
+        <span class="chip">Katalon Studio</span>
+        <span class="chip">Jira</span>
         <span class="chip">Confluence</span>
-        <span class="chip">Salesforce</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <h3>AI &amp; Data</h3>
-      <div class="chips">
-        <span class="chip">AI/ML Integration</span>
-        <span class="chip">Data Analysis</span>
-        <span class="chip">Business Intelligence</span>
+        <span class="chip">Trello</span>
+        <span class="chip">SPSS</span>
+        <span class="chip">SurveyMonkey</span>
+        <span class="chip">GitHub Copilot</span>
+        <span class="chip">CIBC CAI Platform</span>
       </div>
     </div>
   </section>
 
   <section id="podcast">
-    <h2><span class="n">04</span>Habesha in Tech Podcast</h2>
+    <h2><span class="n">06</span>Habesha in Tech Podcast</h2>
     <div class="podcast">
       <div class="tag">Founder &amp; Host</div>
       <h3>Habesha in Tech</h3>
@@ -225,14 +474,14 @@
   </section>
 
   <section id="stats">
-    <h2><span class="n">05</span>GitHub</h2>
+    <h2><span class="n">07</span>GitHub</h2>
     <div class="stats-row">
       <div class="stat"><strong>3,356</strong><span>contributions in the last year</span></div>
       <div class="stat"><strong>77%</strong><span>commits</span></div>
       <div class="stat"><strong>23%</strong><span>pull requests</span></div>
     </div>
     <div class="activity">
-      <img src="https://ghchart.rshah.org/d4af37/tefkassa" alt="Teferi's GitHub contribution activity">
+      <img src="https://ghchart.rshah.org/d4af37/tefkassa" alt="Tef Kassa's GitHub contribution activity">
     </div>
     <div class="card">
       <h3>Activity overview</h3>
@@ -244,7 +493,7 @@
   </section>
 
   <section id="connect" class="connect">
-    <h2><span class="n">06</span>Connect With Me</h2>
+    <h2><span class="n">08</span>Connect With Me</h2>
     <p>I&rsquo;m always open to connecting with fellow tech professionals, podcast guests, and collaborators. Feel free to reach out!</p>
     <div class="cta" style="margin-top:0">
       <a class="btn btn-primary" href="https://www.linkedin.com/in/tefkassa">LinkedIn</a>
@@ -253,7 +502,7 @@
   </section>
 
   <footer>
-    <span>Teferi Kassa</span>
+    <span>Tef Kassa</span>
     <span><a href="https://www.linkedin.com/in/tefkassa">LinkedIn</a> &nbsp;&middot;&nbsp; <a href="https://open.spotify.com/show/habeshaInTech">Podcast</a></span>
   </footer>
 
