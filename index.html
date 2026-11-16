@@ -90,6 +90,11 @@
   .podcast .langs { color: var(--text); font-weight: 600; }
   .stats { display: flex; flex-wrap: wrap; gap: 14px; }
   .stats img { max-width: 100%; border-radius: 12px; }
+  .activity {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px; margin-bottom: 18px; overflow-x: auto;
+  }
+  .activity img { display: block; width: 100%; min-width: 560px; height: auto; }
   .connect p { color: var(--muted); margin-bottom: 20px; max-width: 600px; }
   footer {
     border-top: 1px solid var(--line); padding: 26px 0 40px;
@@ -215,6 +220,9 @@
   <section id="stats">
     <h2><span class="n">05</span>GitHub</h2>
     <p class="sub">See what I&rsquo;m building on GitHub.</p>
+    <div class="activity">
+      <img src="https://ghchart.rshah.org/d4af37/tefkassa" alt="Teferi's GitHub contribution activity">
+    </div>
     <div class="cta" style="margin-top:0">
       <a class="btn btn-primary" href="https://github.com/tefkassa">View GitHub Profile</a>
     </div>
